@@ -385,6 +385,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/motorola/vintf/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix_aidl.xml
+DEVICE_MANIFEST_FILE += \
+    $(CONFIG_HAL_SRC_DIR)/manifest_audio_qti_services.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
