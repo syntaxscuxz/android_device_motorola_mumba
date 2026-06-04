@@ -80,6 +80,26 @@ PRODUCT_PACKAGES += \
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
+# Moto hardware
+PRODUCT_PACKAGES += \
+    MotoActions \
+    MotoCommonOverlay
+
+# Overlay
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayMumba \
+    EuiccOverlayMumba \
+    SystemUIResMumba \
+    WifiResMumba \
+    FrameworksResMumba \
+    SettingsResMumba \
+    TelephonyResMumba
+
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore_V3.xml
