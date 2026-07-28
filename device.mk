@@ -222,6 +222,7 @@ PRODUCT_PACKAGES += \
     SystemUIResMumba \
     WifiResMumba \
     FrameworksResMumba \
+    LineageSystemUIMumba \
     SettingsResMumba \
     TelephonyResMumba
 
